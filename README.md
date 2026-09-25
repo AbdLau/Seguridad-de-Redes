@@ -42,8 +42,7 @@ Implementar una arquitectura perimetral y segmentación de red utilizando un fir
 Se ejecutó una solicitud HTTP conteniendo una carga maliciosa clásica (`' OR '1'='1`) hacia la aplicación web:
 
 ```bash
-curl -v "[http://10.8.46.130/login.php?id=1'%20OR%20'1'='1](http://10.8.46.130/login.php?id=1'%20OR%20'1'='1)"
-
+curl -v http://10.8.46.130/login.php?id=1'%20OR%20'1'='1
 Resultado:
 El firewall FortiGate interceptó la petición en Capa 7 reconociendo la firma de ataque, descartó la solicitud y devolvió al cliente un código de estado HTTP/1.1 403 Forbidden con la página oficial de bloqueo del Web Application Firewall (Event Type: signature).
 
