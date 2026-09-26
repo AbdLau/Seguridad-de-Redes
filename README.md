@@ -173,4 +173,56 @@ Las reglas de firewall fueron ordenadas estrictamente de arriba hacia abajo para
 | **10. Rate Limiting / DoS** | Generación de ráfagas concurrentes de tráfico TCP SYN hacia el servidor. | Umbral superado; FortiGate incrementa contadores y descarta paquetes. | **Exitoso** |
 
 
-> **Nota sobre las imágenes:** Todas las capturas de pantalla referentes a la evidencia del cumplimiento de esta práctica se encuentran debidamente organizadas y disponibles para su consulta directa dentro de la carpeta **`images/`** en el repositorio.
+---
+
+
+## 8. Evidencias
+
+### Topología General en GNS3
+<img width="395" height="501" alt="Captura de pantalla 2026-09-24 192350" src="https://github.com/user-attachments/assets/19365b74-b7f7-476e-8bdf-73da2dd5e10a" />
+
+### Segmentación VLAN y Port Security en Switch
+<img width="647" height="334" alt="Captura de pantalla 2026-09-25 195022" src="https://github.com/user-attachments/assets/431cd072-9c0c-47aa-bd55-a20c0904c456" />
+
+### Hardening y Puertos Inactivos en Switch
+<img width="662" height="167" alt="image" src="https://github.com/user-attachments/assets/acb886d0-3725-4c8f-b0ce-3e2ad44c6fb5" />
+<img width="555" height="166" alt="image" src="https://github.com/user-attachments/assets/20ab2498-19f6-4c81-a097-f9c26c7ea247" />
+<img width="549" height="378" alt="image" src="https://github.com/user-attachments/assets/ce5765fc-adee-41ab-8a14-073cca36e607" />
+
+### Asignación Dinámica por DHCP en User 1
+<img width="630" height="230" alt="image" src="https://github.com/user-attachments/assets/342f1e9b-af86-4a0f-b6e4-644d6c06fadf" />
+
+### Matriz de Políticas de Firewall en FortiOS
+
+##### Políticas de Firewall
+<img width="1362" height="338" alt="Captura de pantalla 2026-09-25 200212" src="https://github.com/user-attachments/assets/fde4d79b-9fd9-45dc-a710-681c8614f08f" />
+
+##### Política de IPv4 DoS
+<img width="1122" height="74" alt="Captura de pantalla 2026-09-25 200304" src="https://github.com/user-attachments/assets/f983c024-841e-4b7d-ad1b-0b051049aae8" />
+
+### Salida a Internet y NAT desde VLAN 10
+<img width="492" height="168" alt="image" src="https://github.com/user-attachments/assets/815b9404-d1ca-4b8c-8254-dea32756de5f" />
+
+### Bloqueo de Acceso Directo de Usuario a MySQL
+<img width="251" height="91" alt="Captura de pantalla 2026-09-25 201457" src="https://github.com/user-attachments/assets/ab5e493b-a0f0-4835-a68f-06d9dc5ed66b" />
+
+### Registro de Tráfico Denegado en FortiGate
+<img width="1330" height="301" alt="image" src="https://github.com/user-attachments/assets/800c5039-ebb1-48d5-bf56-777ec62c6818" />
+
+### Comunicación Autorizada de Web Server a DB Server
+<img width="380" height="68" alt="Captura de pantalla 2026-09-25 202249" src="https://github.com/user-attachments/assets/94829ee7-be86-4a81-8109-208303f6567e" />
+
+### Bloqueo de Descarga de Ejecutables (.exe)
+<img width="465" height="62" alt="Captura de pantalla 2026-09-25 201101" src="https://github.com/user-attachments/assets/3fc81ec8-76fe-48bd-9525-52fcda8f0582" />
+
+### Registro de Filtrado de Archivos en FortiGate
+<img width="1123" height="539" alt="Captura de pantalla 2026-09-25 201156" src="https://github.com/user-attachments/assets/30db6c8b-c976-49e2-90af-d50f8efe2d9d" />
+
+### Bloqueo de Inyección SQL
+<img width="517" height="409" alt="Captura de pantalla 2026-09-25 200951" src="https://github.com/user-attachments/assets/b0eb300c-79f0-4123-a46e-61e0f17dbf95" />
+<img width="643" height="393" alt="Captura de pantalla 2026-09-25 201005" src="https://github.com/user-attachments/assets/c9247415-bcfe-423a-a46f-070fee2779c2" />
+
+### Configuración de Política DoS (Rate Limiting)
+<img width="712" height="512" alt="Captura de pantalla 2026-09-25 200340" src="https://github.com/user-attachments/assets/fd7d181c-95ef-494b-812e-c922d8188b5a" />
+<img width="856" height="251" alt="image" src="https://github.com/user-attachments/assets/f6fe47cb-5d2f-4c53-a004-45f6346efc84" />
+<img width="1110" height="290" alt="image" src="https://github.com/user-attachments/assets/6f16915d-fa41-449f-bc4b-f0b1186ab9d6" />
